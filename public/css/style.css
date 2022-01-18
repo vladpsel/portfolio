@@ -1,0 +1,293 @@
+body {
+  font: normal 400 16px/1.5 "Raleway", Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+svg {
+  vertical-align: middle;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+small {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  font-variant: lining-nums;
+}
+
+.header,
+section,
+article,
+.wrapper,
+.flex,
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.header,
+section,
+.footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  padding: 0 5%;
+}
+
+.full {
+  width: 100%;
+}
+
+.one-of-four {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+}
+.one-of-four.mx-w {
+  max-width: 25%;
+}
+
+.two-of-four {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+.two-of-four.mx-w {
+  max-width: 50%;
+}
+
+.three-of-four {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 75%;
+          flex: 1 1 75%;
+}
+.three-of-four.mx-w {
+  max-width: 75%;
+}
+
+.one-of-three {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.33%;
+          flex: 1 1 33.33%;
+}
+.one-of-three.mx-w {
+  max-width: 33%;
+}
+
+.two-of-three {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 66.66%;
+          flex: 1 1 66.66%;
+}
+.two-of-three.mx-w {
+  max-width: 66%;
+}
+
+.one-of-five {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+}
+
+.two-of-five {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+}
+
+.three-of-five {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+}
+
+.four-of-five {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 77%;
+          flex: 1 1 77%;
+}
+
+.one-of-six {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 16%;
+          flex: 1 1 16%;
+}
+.one-of-six.mx-w {
+  max-width: 16%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.full,
+.one-of-four,
+.two-of-four,
+.three-of-four,
+.one-of-three,
+.two-of-three,
+.one-of-five,
+.two-of-five,
+.three-of-five,
+.four-of-five,
+.one-of-six {
+  padding: 0 1rem;
+}
+
+.v-top {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.v-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.v-bot {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.f-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.f-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.f-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.f-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.f-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.np {
+  padding: 0;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.list > li {
+  padding: 0 1rem;
+}
+.list.np-i > li {
+  padding: 0;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0 1rem;
+}
+.logo svg,
+.logo img {
+  width: 100%;
+}
+.logo.np {
+  padding: 0;
+}
+
+.img-wrp {
+  width: 100%;
+}
+.img-wrp img,
+.img-wrp svg {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 82.125rem;
+}
+
+.header .flex {
+  padding: 1.563rem 0;
+  margin: 0 1rem;
+  border-bottom: 0.5px solid #808080;
+}
+
+.logo {
+  width: 100%;
+  max-width: 8.25rem;
+}
+
+.lang-list > li:not(.lang-list > li:last-of-type) {
+  margin-right: 0.875rem;
+}
+.lang-list > li a {
+  font: normal 300 0.875em/1.2 "Raleway", Arial, Helvetica, sans-serif;
+  color: #383838;
+  opacity: 0.8;
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
+}
+.lang-list > li a:hover {
+  color: #222076;
+}
+.lang-list > li .selected {
+  font-weight: 700;
+  opacity: 1;
+}

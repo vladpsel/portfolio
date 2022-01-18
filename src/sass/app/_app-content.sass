@@ -1,0 +1,30 @@
+$main-color: #222076
+$black-color: #383838
+
+.wrapper
+  max-width: 82.125rem
+
+.header
+  .flex
+    padding: 1.563rem 0
+    margin: 0 1rem
+    border-bottom: .5px solid #808080
+
+.logo
+  width: 100%
+  max-width: 8.25rem
+
+.lang-list
+  > li
+    &:not(&:last-of-type)
+      margin-right: .875rem
+    a
+      font: normal 300 .875em/1.2 $main-font
+      color: $black-color
+      opacity: .8
+      +animate
+      &:hover
+        color: $main-color
+    .selected
+      font-weight: 700
+      opacity: 1
