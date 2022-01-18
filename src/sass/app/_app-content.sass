@@ -1,14 +1,62 @@
 $main-color: #222076
 $black-color: #383838
+$dark-grey: rgba(0, 0, 0, .2)
+
+body
+  color: $black-color
 
 .wrapper
   max-width: 82.125rem
+
+.title-main
+  margin-bottom: .813rem
+
+.colored
+  color: $main-color
+
+.ml-28
+  margin-left: 1.75rem
+
+.mb-18
+  margin-bottom: 1.125rem
+
+.mb-34
+  margin-bottom: 2.125rem
+
+.mb-47
+  margin-bottom: 2.938em
+
+.mb-76
+  margin-bottom: 4.75rem
+
+section
+  &:not(.first-screen)
+    padding: 2.188rem 0
+
+.btn-link
+  font: normal 700 .875em/1.2 $main-font
+  color: $black-color
+
+.btn-arr
+  font: normal 700 .875em/1.2 $main-font
+  color: $black-color
+  span
+    opacity: 1
+    cursor: pointer
+  svg
+    fill: $black-color
+
+.text-box
+  p
+    margin-bottom: 1.125rem
+
+// end of globals
 
 .header
   .flex
     padding: 1.563rem 0
     margin: 0 1rem
-    border-bottom: .5px solid #808080
+    border-bottom: .5px solid $dark-grey
 
 .logo
   width: 100%
@@ -22,9 +70,44 @@ $black-color: #383838
       font: normal 300 .875em/1.2 $main-font
       color: $black-color
       opacity: .8
+      padding: .5rem
       +animate
       &:hover
         color: $main-color
     .selected
       font-weight: 700
       opacity: 1
+
+.home-first-screen
+  margin-bottom: 2.188rem
+  > .flex
+    border-bottom: .5px solid $dark-grey
+    margin: 0 1rem
+  .content
+    padding: 2.188rem 1rem
+  .text-btn-box
+    margin: 0 10%
+
+.first-screen__picture
+  padding: 0
+  border-left: .5px solid $dark-grey
+  .socials
+    padding: 1.563rem
+    > li
+      a
+        display: inline-flex
+        font: normal 700 .875em/1.2 $main-font
+        color: $black-color
+        opacity: .75
+        padding: 1rem 1rem 1rem 0
+        +animate
+        &:hover
+          opacity: 1
+          color: $main-color
+
+.about
+  padding: 0 10%
+  .text-box
+    padding-top: 4.375rem
+    p
+      font-size: 1.125em
