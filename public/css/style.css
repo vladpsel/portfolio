@@ -466,6 +466,9 @@ body {
   padding: 0 10%;
 }
 
+section {
+  overflow: hidden;
+}
 section:not(.first-screen) {
   padding: 2.188rem 0;
 }
