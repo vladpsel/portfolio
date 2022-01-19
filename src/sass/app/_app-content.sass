@@ -24,14 +24,28 @@ body
   margin-bottom: 2.125rem
 
 .mb-47
-  margin-bottom: 2.938em
+  margin-bottom: 2.938rem
 
 .mb-76
   margin-bottom: 4.75rem
 
+.aligned
+  margin: 0 1rem
+
+.limited-box
+  padding: 0 10%
+
 section
   &:not(.first-screen)
     padding: 2.188rem 0
+
+.title
+  span
+    &:not(.w-auto)
+      width: 100%
+      display: block
+.footer
+  padding: 0  0 3rem 0
 
 .btn-link
   font: normal 700 .875em/1.2 $main-font
@@ -40,11 +54,16 @@ section
 .btn-arr
   font: normal 700 .875em/1.2 $main-font
   color: $black-color
+  &:hover
+    color: $main-color
+    svg
+      transform: translateX(4px)
   span
     opacity: 1
     cursor: pointer
   svg
     fill: $black-color
+    +animate
 
 .text-box
   p
@@ -104,10 +123,104 @@ section
         &:hover
           opacity: 1
           color: $main-color
+    .hover-box
+      &:hover
+        .hover-box__list
+          max-height: 13rem
+    .hover-box__btn
+      padding: 1rem 1rem 1rem 0
+
+
+.hover-box__list
+  .socials-more
+    background: #fff
+    padding: 0 1rem
+    min-width: 10rem
 
 .about
-  padding: 0 10%
   .text-box
     padding-top: 4.375rem
     p
       font-size: 1.125em
+
+.portfolio-list
+  .img-wrp
+    max-height: 24.563rem
+    overflow: hidden
+    &:hover
+      img
+        filter: grayscale(0%)
+  img
+    filter: grayscale(100%)
+    +animate
+  .info
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+    position: relative
+    right: -1rem
+    width: 100%
+    bottom: 2rem
+    padding: .938rem
+    background: #fff
+    border: 1px solid $dark-grey
+    > p,
+    > span
+      width: 100%
+      margin-bottom: 2.5px
+  .headline
+    font: normal 700 .875em/1.3 $main-font
+  .description
+    font: normal 700 .75em/1.3 $main-font
+    color: $dark-grey
+
+.tab-btn
+  padding: 1rem
+  border-left: 1px solid $dark-grey
+  flex: 1 1 auto
+  text-align: center
+  font: normal 700 1.125em/1.2 $main-font
+  color: $dark-grey
+  cursor: pointer
+  +animate
+  &:hover
+    background: #ededed
+  &.active
+    color: $main-color
+  &:last-of-type
+    border-right: 1px solid $dark-grey
+
+.tab-btn-panel
+  display: none
+
+.cases
+  border-bottom: .5px solid $dark-grey
+
+.footer
+  a,
+  span
+    font: normal 700 .875em/1.2 $main-font
+    opacity: .7
+    +animate
+  a
+    &:hover
+      opacity: 1
+  .socials
+    justify-content: flex-start
+    > li
+      margin-right: 7%
+
+.footer-list
+  > li
+    margin-bottom: 1rem
+
+.copyrights
+  p
+    font: normal 900 .63em/1.3 $main-font
+    color: $dark-grey
+
+.copyrights__me
+  margin-bottom: 1rem
+  > span,
+  > img
+    margin-right: 5px

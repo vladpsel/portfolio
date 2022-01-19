@@ -261,6 +261,24 @@ section,
       flex-wrap: wrap;
 }
 
+.list-two-items > li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.list-three-items > li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
+}
+
+.list-four-items > li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+}
+
 button,
 input,
 textarea,
@@ -386,9 +404,14 @@ select {
 
 .hover-box__list {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  padding: 0;
   left: 0;
   width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
 }
 
 .img-wrp {
@@ -428,15 +451,32 @@ body {
 }
 
 .mb-47 {
-  margin-bottom: 2.938em;
+  margin-bottom: 2.938rem;
 }
 
 .mb-76 {
   margin-bottom: 4.75rem;
 }
 
+.aligned {
+  margin: 0 1rem;
+}
+
+.limited-box {
+  padding: 0 10%;
+}
+
 section:not(.first-screen) {
   padding: 2.188rem 0;
+}
+
+.title span:not(.w-auto) {
+  width: 100%;
+  display: block;
+}
+
+.footer {
+  padding: 0 0 3rem 0;
 }
 
 .btn-link {
@@ -448,12 +488,21 @@ section:not(.first-screen) {
   font: normal 700 0.875em/1.2 "Raleway", Arial, Helvetica, sans-serif;
   color: #383838;
 }
+.btn-arr:hover {
+  color: #222076;
+}
+.btn-arr:hover svg {
+  -webkit-transform: translateX(4px);
+          transform: translateX(4px);
+}
 .btn-arr span {
   opacity: 1;
   cursor: pointer;
 }
 .btn-arr svg {
   fill: #383838;
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
 }
 
 .text-box p {
@@ -526,13 +575,133 @@ section:not(.first-screen) {
   opacity: 1;
   color: #222076;
 }
-
-.about {
-  padding: 0 10%;
+.first-screen__picture .socials .hover-box:hover .hover-box__list {
+  max-height: 13rem;
 }
+.first-screen__picture .socials .hover-box__btn {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.hover-box__list .socials-more {
+  background: #fff;
+  padding: 0 1rem;
+  min-width: 10rem;
+}
+
 .about .text-box {
   padding-top: 4.375rem;
 }
 .about .text-box p {
   font-size: 1.125em;
+}
+
+.portfolio-list .img-wrp {
+  max-height: 24.563rem;
+  overflow: hidden;
+}
+.portfolio-list .img-wrp:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+.portfolio-list img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
+}
+.portfolio-list .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  right: -1rem;
+  width: 100%;
+  bottom: 2rem;
+  padding: 0.938rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.portfolio-list .info > p,
+.portfolio-list .info > span {
+  width: 100%;
+  margin-bottom: 2.5px;
+}
+.portfolio-list .headline {
+  font: normal 700 0.875em/1.3 "Raleway", Arial, Helvetica, sans-serif;
+}
+.portfolio-list .description {
+  font: normal 700 0.75em/1.3 "Raleway", Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.tab-btn {
+  padding: 1rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: center;
+  font: normal 700 1.125em/1.2 "Raleway", Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
+}
+.tab-btn:hover {
+  background: #ededed;
+}
+.tab-btn.active {
+  color: #222076;
+}
+.tab-btn:last-of-type {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tab-btn-panel {
+  display: none;
+}
+
+.cases {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer a,
+.footer span {
+  font: normal 700 0.875em/1.2 "Raleway", Arial, Helvetica, sans-serif;
+  opacity: 0.7;
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
+}
+.footer a:hover {
+  opacity: 1;
+}
+.footer .socials {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.footer .socials > li {
+  margin-right: 7%;
+}
+
+.footer-list > li {
+  margin-bottom: 1rem;
+}
+
+.copyrights p {
+  font: normal 900 0.63em/1.3 "Raleway", Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.copyrights__me {
+  margin-bottom: 1rem;
+}
+.copyrights__me > span,
+.copyrights__me > img {
+  margin-right: 5px;
 }
