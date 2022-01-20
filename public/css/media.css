@@ -147,6 +147,9 @@
     text-align: left;
   }
 
+  .footer-alt .socials > li {
+    margin: 0;
+  }
   .footer-alt .copyrights {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;

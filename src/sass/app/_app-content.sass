@@ -243,7 +243,12 @@ section
         margin-right: 0
 
 .not-found-content
-  margin: 0 1rem
+  min-height: 55vh
+  padding: 20% 0
+  > .wrapper
+    margin: 0 1rem
+  .magic-body
+    padding: 7.5% 0
 
 .not-found-card,
 .not-found-card
@@ -254,26 +259,44 @@ section
     justify-content: center
 
 .not-found-card
+  display: flex
+  flex-flow: column wrap
+  align-items: center
   width: 100%
-  max-width: 35.625rem
+  max-width: 25.625rem
   padding: 3.125rem 2.188rem
   background: #fff
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
   border-radius: 10px
+  transition: .5s ease
+  transform-style: preserve-3d
   .text
     text-align: center
+  .text-box
+    position: relative
+    z-index: 4
+    +animate
 
 .title-shape
-  width: 85px
-  height: 85px
+  width: 100px
+  height: 100px
   border-radius: 50%
   background: $main-color
   position: relative
   margin-bottom: 2.5rem
+  z-index: 1
+  transform-style: preserve-3d
   .headline
     font: normal 900 4.5em/1.1 $main-font
     color: #808080
     position: absolute
-    top: 0
-    left: -3.1rem
-    min-width: 15rem
+    top: 0.6rem
+    left: -2.8rem
+    min-width: 12rem
+    z-index: 5
+    transform-style: preserve-3d
+    text-align: center
+    +animate
+
+.magic-body
+  perspective: 500px
