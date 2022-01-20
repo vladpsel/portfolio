@@ -158,4 +158,8 @@
   .footer-alt .contacts {
     text-align: center;
   }
+
+  .m-hidden {
+    display: none;
+  }
 }

@@ -41,6 +41,10 @@ small {
   font: normal 500 1.875em/1.5 "Raleway", Arial, Helvetica, sans-serif;
 }
 
+.subtitle {
+  font: normal 500 1.95em/1.3 "Raleway", Arial, Helvetica, sans-serif;
+}
+
 .subtitle-sm {
   font: normal 500 1.125em/1.3 "Raleway", Arial, Helvetica, sans-serif;
 }
@@ -794,6 +798,10 @@ section:not(.first-screen) {
 .not-found-card .text-box {
   position: relative;
   z-index: 4;
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
+}
+.not-found-card .btn-arr {
   -webkit-transition: 0.3s linear all;
   transition: 0.3s linear all;
 }
