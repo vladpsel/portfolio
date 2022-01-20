@@ -52,7 +52,8 @@ section
   font: normal 700 .875em/1.2 $main-font
   color: $black-color
 
-.btn-arr
+.btn-arr,
+.btn-icon
   font: normal 700 .875em/1.2 $main-font
   color: $black-color
   &:hover
@@ -65,6 +66,10 @@ section
   svg
     fill: $black-color
     +animate
+
+.btn-icon
+  .icon
+    width: 35px
 
 .text-box
   p
@@ -225,3 +230,50 @@ section
   > span,
   > img
     margin-right: 5px
+
+.footer-alt
+  padding: 2.188rem 0
+  .contacts
+    margin-bottom: 1rem
+    text-align: right
+    a
+      display: inline-flex
+      margin: 0 1rem .5rem 0
+      &:last-of-type
+        margin-right: 0
+
+.not-found-content
+  margin: 0 1rem
+
+.not-found-card,
+.not-found-card
+  .content
+    display: flex
+    flex-flow: column wrap
+    align-items: center
+    justify-content: center
+
+.not-found-card
+  width: 100%
+  max-width: 35.625rem
+  padding: 3.125rem 2.188rem
+  background: #fff
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+  border-radius: 10px
+  .text
+    text-align: center
+
+.title-shape
+  width: 85px
+  height: 85px
+  border-radius: 50%
+  background: $main-color
+  position: relative
+  margin-bottom: 2.5rem
+  .headline
+    font: normal 900 4.5em/1.1 $main-font
+    color: #808080
+    position: absolute
+    top: 0
+    left: -3.1rem
+    min-width: 15rem

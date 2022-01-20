@@ -105,6 +105,13 @@
     width: auto;
     padding: 1rem;
   }
+
+  .footer-alt {
+    text-align: center;
+  }
+  .footer-alt .contacts a:last-of-type {
+    margin-right: 1rem;
+  }
 }
 @media (max-width: 680px) {
   .home-first-screen {
@@ -138,5 +145,14 @@
 
   .title p {
     text-align: left;
+  }
+
+  .footer-alt .copyrights {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer-alt .contacts {
+    text-align: center;
   }
 }
