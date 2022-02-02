@@ -5,7 +5,7 @@ declare(strict_types=1);
 
 use Voopsc\Wild\Core\Kernel;
 
-ini_set('display_errors', '1');
+ini_set('display_errors', '0');
 error_reporting(E_ALL);
 
 // 2. Constants and global vars
