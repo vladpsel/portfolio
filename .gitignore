@@ -1,3 +1,4 @@
-*.config
-docker
-.gitignore
+.idea
+.env
+docker/mysql
+/vendor/
