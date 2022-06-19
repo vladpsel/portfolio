@@ -28,7 +28,7 @@
                             <span>Email:</span> <a href="mailto:vpanovwr@gmail.com">vpanovwr@gmail.com</a>
                         </li>
                         <li>
-                            <span>Телефон:</span> <a href="tel:380683317644">+380 68 331 76 44</a>
+                            <span>Телефон:</span> <a href="tel:380995628125">+380 99 562 81 25</a>
                         </li>
                         <li>
                             <span>Skype:</span> <a href="#">panovlad13</a>
