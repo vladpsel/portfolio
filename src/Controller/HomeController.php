@@ -21,6 +21,7 @@ class HomeController extends BaseController
         $content = $lang->getDictionary('home.php');
 
         return $this->render('user/home.php', [
+            ['dictionary' => $lang->getDictionary(APP_LANG . '.php')],
             ['content' => $content],
         ]);
     }

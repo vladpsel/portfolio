@@ -74,14 +74,14 @@ $this->components->getHead();
                         <?php echo $content['about_text_three']; ?>
                     </p>
 
-<!--                    <div class="btn-group flex f-right">-->
-<!--                        <a href="404.html" class="btn btn-arr">-->
-<!--                            <span>Чуть-чуть по подробнее</span>-->
-<!--                            <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                                <path d="M6 3.4641C6.66667 3.849 6.66667 4.81125 6 5.19615L1.5 7.79423C0.833334 8.17913 -3.3649e-08 7.69801 0 6.92821L2.27131e-07 1.73205C2.6078e-07 0.962253 0.833334 0.481126 1.5 0.866027L6 3.4641Z"/>-->
-<!--                            </svg>-->
-<!--                        </a>-->
-<!--                    </div>-->
+                    <!-- <div class="btn-group flex f-right">
+                        <a href="404.html" class="btn btn-arr">
+                            <span>Чуть-чуть по подробнее</span>
+                            <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 3.4641C6.66667 3.849 6.66667 4.81125 6 5.19615L1.5 7.79423C0.833334 8.17913 -3.3649e-08 7.69801 0 6.92821L2.27131e-07 1.73205C2.6078e-07 0.962253 0.833334 0.481126 1.5 0.866027L6 3.4641Z"/>
+                            </svg>
+                        </a>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -161,16 +161,24 @@ $this->components->getHead();
                             </li>
                         <?php endforeach; ?>
                     </ul>
+                    <div class="flex f-right mb-18">
+                        <a href="#" class="btn btn-arr">
+                            <span><?php echo $dictionary['more_btn_title']; ?></span>
+                            <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 3.4641C6.66667 3.849 6.66667 4.81125 6 5.19615L1.5 7.79423C0.833334 8.17913 -3.3649e-08 7.69801 0 6.92821L2.27131e-07 1.73205C2.6078e-07 0.962253 0.833334 0.481126 1.5 0.866027L6 3.4641Z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="tab-btn-panel flex f-between">
+                <!-- <div class="tab-btn-panel flex f-between">
                     <button type="button" name="button" class="tab-btn">Дизайнил</button>
                     <button type="button" name="button" class="tab-btn">Верстал</button>
                     <button type="button" name="button" class="tab-btn active">“Под ключ”</button>
                     <button type="button" name="button" class="tab-btn">Бекэнд</button>
                     <button type="button" name="button" class="tab-btn">На платформах собирал</button>
                     <button type="button" name="button" class="tab-btn">Прочее</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
