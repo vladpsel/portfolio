@@ -13,7 +13,7 @@ const app = Vue.createApp({
         // let response = await axios.get('https://jsonplaceholder.typicode.com/posts');
         this.posts = response.data;
         this.filteredPost = response.data;
-        this.filteredPost = this.filteredPost.filter(post => post.year === 2022);
+        // this.filteredPost = this.filteredPost.filter(post => post.year === 2022);
       } catch (e) {
         console.log(e);
       }
@@ -40,7 +40,7 @@ app.component('navButtons', {
       buttons: [
         {
           year: 2022,
-          isCurrent: true,
+          isCurrent: false,
         },
         {
           year: 2021,
@@ -52,7 +52,7 @@ app.component('navButtons', {
         },
         {
           year: 'All',
-          isCurrent: false,
+          isCurrent: true,
         },
       ]
     }
@@ -113,7 +113,7 @@ app.component('portfolioCases', {
       v-for="(post, i) in posts"
       :key=post
     >
-      <a :href="post.link" class="content">
+      <a :href="post.link" class="content" target="_blank">
         <div class="img-wrp mb-18">
           <img :src="post.thumbnail" alt="">
         </div>
