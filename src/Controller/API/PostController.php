@@ -16,7 +16,7 @@ class PostController extends BaseController
         $postsAsObj = new CaseObjectMapper();
         $posts = $postsAsObj->getPosts();
 
-        return $this->json(['posts' => $posts]);
+        return $this->json($posts);
     }
     
 }

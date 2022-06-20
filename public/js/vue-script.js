@@ -2,6 +2,7 @@ const app = Vue.createApp({
   data() {
     return {
       posts: [],
+      filteredPost: [],
     }
   },
   methods: {
@@ -9,9 +10,21 @@ const app = Vue.createApp({
     async getPosts() {
       try {
         let response = await axios.get('/api/v1/posts');
-        this.posts = response.data.posts;
+        // let response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+        this.posts = response.data;
+        this.filteredPost = response.data;
+        this.filteredPost = this.filteredPost.filter(post => post.year === 2022);
       } catch (e) {
         console.log(e);
+      }
+    },
+
+    getFilteredPosts(year) {
+      // this.posts = ;
+      if (year === 'All') {
+        this.filteredPost = this.posts;
+      } else {
+        this.filteredPost = this.posts.filter(post => post.year === year);
       }
     }
 
@@ -44,12 +57,16 @@ app.component('navButtons', {
       ]
     }
   },
+  emits: [
+    'call-filter'
+  ],
   methods: {
     activateFilter(button) {
       this.buttons.forEach((item) => {
         item.isCurrent = false
       });
       button.isCurrent = true;
+      this.$emit('call-filter', button.year);
     }
   },
   template: `
@@ -84,10 +101,14 @@ app.component('portfolioCases', {
     }
   },
   methods: {
-
   },
   template: `
   <ul class="case-list list-two-items list full np mx-w mb-34" v-bind:posts="posts">
+  <transition-group
+    name="case-list"
+    appear
+    mode="out-in"
+  >
     <li
       v-for="(post, i) in posts"
       :key=post
@@ -101,6 +122,7 @@ app.component('portfolioCases', {
         </h2>
       </a>
     </li>
+  </transition-group>
   </ul>
   `
 })
