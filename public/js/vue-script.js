@@ -23,8 +23,15 @@ const app = Vue.createApp({
       // this.posts = ;
       if (year === 'All') {
         this.filteredPost = this.posts;
-      } else {
+        return;
+      }
+      if (year <= 2019) {
+        this.filteredPost = this.posts.filter(post => post.year <= year);
+        return;
+      }
+      else {
         this.filteredPost = this.posts.filter(post => post.year === year);
+        return;
       }
     }
 
@@ -48,6 +55,11 @@ app.component('navButtons', {
         },
         {
           year: 2020,
+          isCurrent: false,
+        },
+        {
+          prefix: '>',
+          year: 2019,
           isCurrent: false,
         },
         {
@@ -82,7 +94,9 @@ app.component('navButtons', {
         }"
         @click="activateFilter(button)"
       >
-
+        <template v-if="typeof button.prefix !== 'undefined'">
+        {{ button.prefix }}
+        </template>
         {{ button.year }}
       </button>
     </li>

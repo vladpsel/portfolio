@@ -132,5 +132,106 @@ return [
         ],
     ],
 
+    //    Ka Store Ka
+    [
+        'link' => 'https://100markups.ucompany.site/2019/ka-store/',
+        'internal_link' => '',
+        'work_link' => 'https://100markups.ucompany.site/2019/ka-store/',
+        'thumbnail' => '/upload/cases/thumb_14.jpg',
+        'picture' => '/upload/cases/2.jpg',
+        'title' => 'Ka Storeka',
+        'year' => 2019,
+        'technologies' => [
+            'html',
+            'css',
+            'jquery',
+            'photoshop',
+        ],
+    ],
+
+    //    Wooder
+    [
+        'link' => 'https://100markups.ucompany.site/2018/wooder/',
+        'internal_link' => '',
+        'work_link' => 'https://100markups.ucompany.site/2018/wooder/',
+        'thumbnail' => '/upload/cases/thumb_12.jpg',
+        'picture' => '/upload/cases/2.jpg',
+        'title' => 'Wooder Template',
+        'year' => 2018,
+        'technologies' => [
+            'html',
+            'css',
+            'jquery',
+            'photoshop',
+        ],
+    ],
+
+    //    BW Landing
+    [
+        'link' => 'https://100markups.ucompany.site/2018/bw-landing/',
+        'internal_link' => '',
+        'work_link' => 'https://100markups.ucompany.site/2018/bw-landing/',
+        'thumbnail' => '/upload/cases/thumb_13.jpg',
+        'picture' => '/upload/cases/2.jpg',
+        'title' => 'B&W Landing Template',
+        'year' => 2018,
+        'technologies' => [
+            'html',
+            'css',
+            'jquery',
+            'photoshop',
+        ],
+    ],
+
+//    relax room
+    [
+        'link' => 'http://100markups.ucompany.site/2018/relax-room/',
+        'internal_link' => '',
+        'work_link' => 'http://100markups.ucompany.site/2018/relax-room/',
+        'thumbnail' => '/upload/cases/thumb_9.jpg',
+        'picture' => '/upload/cases/2.jpg',
+        'title' => 'Relax Room',
+        'year' => 2018,
+        'technologies' => [
+            'html',
+            'css',
+            'jquery',
+            'php',
+        ],
+    ],
+    //    Bhromaon
+    [
+        'link' => 'https://100markups.ucompany.site/2018/bhromaon/',
+        'internal_link' => '',
+        'work_link' => 'https://100markups.ucompany.site/2018/bhromaon/',
+        'thumbnail' => '/upload/cases/thumb_10.jpg',
+        'picture' => '/upload/cases/2.jpg',
+        'title' => 'Bhromaon Template',
+        'year' => 2018,
+        'technologies' => [
+            'html',
+            'css',
+            'jquery',
+            'php',
+        ],
+    ],
+
+    //    Sarajevo
+    [
+        'link' => 'https://100markups.ucompany.site/2018/sarajevo/',
+        'internal_link' => '',
+        'work_link' => 'https://100markups.ucompany.site/2018/sarajevo/',
+        'thumbnail' => '/upload/cases/thumb_11.jpg',
+        'picture' => '/upload/cases/2.jpg',
+        'title' => 'Sarajevo Template',
+        'year' => 2018,
+        'technologies' => [
+            'html',
+            'css',
+            'jquery',
+            'photoshop',
+        ],
+    ],
+
 
 ];
