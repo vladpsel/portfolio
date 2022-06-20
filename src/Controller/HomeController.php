@@ -25,5 +25,5 @@ class HomeController extends BaseController
             ['content' => $content],
         ]);
     }
-    
+
 }

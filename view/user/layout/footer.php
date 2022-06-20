@@ -1,6 +1,6 @@
     <footer class="footer">
         <div class="wrapper">
-            <div class="flex">
+            <div class="flex full">
                 <h2 class="title mb-47"><?php echo $tplData['contact_title']; ?></h2>
             </div>
             <div class="flex full">
@@ -58,5 +58,10 @@
     <!-- Scripts -->
     <script src="<?php echo $this->getAsset('/js/main.js'); ?>"></script>
     <script src="<?php echo $this->getAsset('/js/script.js'); ?>"></script>
+    <?php if(isset($tplData['vue'])): ?>
+        <script src="<?php echo $this->getAsset('/js/vue.js'); ?>"></script>
+        <script src="<?php echo $this->getAsset('/js/axios.js'); ?>"></script>
+        <script src="<?php echo $this->getAsset('/js/vue-script.js'); ?>"></script>
+    <?php endif ?>
     </body>
 </html>

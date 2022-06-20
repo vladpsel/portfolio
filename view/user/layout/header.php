@@ -7,5 +7,11 @@
 
             <?php $tplData->renderLangList(['lang-list', 'list', 'np-i']); ?>
         </div>
+        <div class="header__banner flex f-center v-center">
+            <div class="icon">
+                <img src="<?php echo $this->getAsset('img/flag-icon.svg'); ?>" alt="Ukraine flag">
+            </div>
+            <span class="subtitle-sm">Glory to Ukraine!</span>
+        </div>
     </div>
 </header>

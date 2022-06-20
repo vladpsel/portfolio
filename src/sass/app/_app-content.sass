@@ -82,6 +82,14 @@ section
     padding: 1.563rem 0
     margin: 0 1rem
     border-bottom: .5px solid $dark-grey
+  .header__banner
+    padding: .5rem 0
+
+.header__banner
+  .icon,
+  span,
+  p
+    margin-right: 5px
 
 .logo
   width: 100%
@@ -196,9 +204,6 @@ section
   &:last-of-type
     border-right: 1px solid $dark-grey
 
-.tab-btn-panel
-  display: none
-
 .cases
   border-bottom: .5px solid $dark-grey
 
@@ -302,3 +307,22 @@ section
 
 .magic-body
   perspective: 500px
+
+// portfolio
+.top-nav-list
+  padding: .5rem 0
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2)
+  width: 100%
+  .tab-btn
+    border: none
+    flex: 0 0 auto
+
+.case-list
+  > li
+    margin-bottom: 1.2rem
+    position: relative
+  .content
+    display: flex
+    flex-wrap: wrap
+  .img-wrp
+    flex: 1 1 100%

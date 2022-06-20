@@ -3,18 +3,14 @@
 .two-of-five,
 .three-of-five,
 .four-of-five {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
+    flex: 1 1 50%;
     width: 50%;
   }
 
   .list-two-items > li,
 .list-three-items > li,
 .list-four-items > li {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
+    flex: 1 1 50%;
     width: 50%;
     max-width: 50%;
     margin-bottom: 1rem;
@@ -35,9 +31,7 @@
 .two-of-five,
 .three-of-five,
 .four-of-five {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    flex: 1 1 100%;
     width: 100%;
   }
   .one-of-three.mx-w,
@@ -52,29 +46,35 @@
     max-width: none;
   }
 
-  .list-three-items > li,
+  .list-two-items > li,
+.list-three-items > li,
 .list-four-items > li {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    flex: 1 1 100%;
     width: 100%;
     max-width: none;
     padding: 0;
     margin-bottom: 1.9rem;
   }
-  .list-three-items.mx > li,
+  .list-two-items.mx > li,
+.list-three-items.mx > li,
 .list-four-items.mx > li {
     max-width: none;
   }
 
   .list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 
   .title-main {
     font-size: 2em;
+  }
+}
+@media (min-width: 1024px) {
+  .case-list > li {
+    max-width: 50%;
+  }
+  .case-list > li:nth-of-type(even) {
+    top: 2rem;
   }
 }
 @media (max-width: 1440px) {
@@ -91,15 +91,9 @@
   }
 
   .footer .socials {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: flex-start;
+    justify-content: center;
   }
   .footer .socials > li {
     width: auto;
@@ -151,9 +145,7 @@
     margin: 0;
   }
   .footer-alt .copyrights {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .footer-alt .contacts {
     text-align: center;
@@ -163,3 +155,5 @@
     display: none;
   }
 }
+
+/*# sourceMappingURL=media.css.map */

@@ -122,5 +122,4 @@ class View
         return true;
     }
 
-
 }

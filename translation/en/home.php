@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 return [
-    'title_one' => 'Hello! My name is Vlad and I',
+    'title_one' => 'Hello! My name is Vlad and I am a',
     'title_two' => 'Junior Full Stack Developer',
     'title_and' => 'and also',
     'description_one' => 'I am developing the economy and business in Ukraine through websites, web applications and the code I write.
